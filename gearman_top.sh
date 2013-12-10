@@ -23,5 +23,5 @@ then
         echo "run ./gearman_top.sh <IP>"
         exit 1
 else
-        watch -n 1 -d -t '(echo status ; sleep 0.1) | '${nc_cmd}' '$1' 4730 | awk -f '$SCRIPTPATH'column.awk'
+        watch -n 1 -d -t '(echo status ; sleep 0.1) | '${nc_cmd}' '$1' 4730 | awk -f '$SCRIPTPATH'/column.awk'
 fi
